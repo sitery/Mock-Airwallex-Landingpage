@@ -1,0 +1,702 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  position: absolute;
+  padding: 20px;
+  z-index: 2;
+}
+
+.logo {
+  opacity: 0.3;
+  width: 150px;
+}
+
+/* Wave Design SVG */
+
+.custom-shape-divider-bottom-1598696301 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1598696301 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1598696301 .shape-fill {
+  fill: #ffffff;
+}
+
+/* css grid layout */
+
+.gridcontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box5"
+    "box6 box6"
+    "box7 box7";
+}
+
+/* main hero container */
+
+.hero {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  justify-content: flex-end;
+  position: relative;
+  background-color: #ef4b48;
+  background-image: linear-gradient(180deg, #ef4b48 0%, #fb873c 100%);
+  height: 100vh;
+  width: 100%;
+  grid-area: box1;
+}
+
+.hero h1 {
+  position: absolute;
+  left: 140px;
+  bottom: 55%;
+  color: #000000;
+  font-size: 2.1em;
+}
+
+span {
+  color: #ffffff;
+  display: inline-block;
+}
+
+/* first call to action button */
+
+.calltoaction {
+  position: absolute;
+  left: 140px;
+  text-decoration: none;
+  background-color: #7043ff;
+  color: #ffffff;
+  padding: 5px 21px;
+  border-radius: 5px;
+  border: 1px solid #7043ff;
+}
+
+/* app images main */
+
+.heroimage1 {
+  position: absolute;
+  right: -122px;
+  order: 2;
+  width: 650px;
+}
+
+.heroimage2 {
+  position: absolute;
+  align-self: flex-end;
+  right: 400px;
+  order: 1;
+  width: 230px;
+}
+
+/* app features */
+
+.globalaccounts i,
+.paymentsfx i,
+.cards i,
+.xerointegration i {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  color: #fa4e42;
+}
+
+.globalaccounts p,
+.paymentsfx p,
+.cards p,
+.xerointegration p {
+  color: #a0a7b1;
+  line-height: 1.8;
+}
+
+.globalaccounts {
+  grid-area: box2;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.paymentsfx {
+  grid-area: box3;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.cards {
+  grid-area: box4;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.xerointegration {
+  grid-area: box5;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* second wave svg */
+
+.custom-shape-divider-top-1598782713 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1598782713 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1598782713 .shape-fill {
+  fill: #ffffff;
+}
+
+/* final call to action bottom */
+
+.finalcalltoaction {
+  grid-area: box6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #ef4b48;
+  background-image: linear-gradient(180deg, #ef4b48 0%, #fb873c 100%);
+  height: 45vh;
+  width: 100%;
+}
+
+.finalcalltoaction a {
+  bottom: 50px;
+}
+
+.calltoaction2 {
+  position: absolute;
+  text-decoration: none;
+  background-color: #7043ff;
+  color: #ffffff;
+  padding: 5px 21px;
+  border-radius: 5px;
+  border: 1px solid #7043ff;
+  font-size: 1.5em;
+  z-index: 1;
+}
+
+.finalcalltoaction img {
+  width: 100%;
+}
+
+/* social media links */
+
+footer {
+  grid-area: box7;
+  background-color: #292c30;
+  color: #ffffff;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer i {
+  font-size: 1rem;
+  padding: 0 20px 0 0;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 1199.98px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .hero h1 {
+    left: 80px;
+    bottom: 55%;
+    font-size: 1.8em;
+  }
+
+  .calltoaction {
+    left: 80px;
+    padding: 5px 21px;
+  }
+
+  .heroimage1 {
+    right: -170px;
+    width: 650px;
+  }
+
+  .heroimage2 {
+    right: 305px;
+    width: 230px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .logo {
+    width: 100px;
+  }
+
+  .hero {
+    height: 90vh;
+  }
+
+  .hero h1 {
+    left: 80px;
+    bottom: 55%;
+    font-size: 1.2em;
+  }
+
+  .calltoaction {
+    left: 80px;
+    padding: 5px 21px;
+    font-size: 0.8rem;
+  }
+
+  .heroimage1 {
+    right: -100px;
+    width: 450px;
+  }
+
+  .heroimage2 {
+    right: 250px;
+    width: 150px;
+    bottom: 20px;
+  }
+
+  .globalaccounts i,
+  .paymentsfx i,
+  .cards i,
+  .xerointegration i {
+    font-size: 1.8rem;
+  }
+
+  .globalaccounts p,
+  .paymentsfx p,
+  .cards p,
+  .xerointegration p {
+    line-height: 1.8;
+    font-size: 0.8rem;
+  }
+
+  .finalcalltoaction {
+    height: 45vh;
+  }
+
+  .finalcalltoaction a {
+    bottom: 40px;
+  }
+
+  .calltoaction2 {
+    padding: 5px 21px;
+    font-size: 1.2rem;
+  }
+
+  footer i {
+    font-size: 0.8rem;
+    padding: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .logo {
+    width: 100px;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .hero h1 {
+    left: 70px;
+    bottom: 55%;
+    font-size: 1rem;
+  }
+
+  .calltoaction {
+    left: 70px;
+    padding: 5px 21px;
+    font-size: 0.8em;
+  }
+
+  .heroimage1 {
+    right: -200px;
+    width: 450px;
+  }
+
+  .heroimage2 {
+    right: 150px;
+    width: 150px;
+    bottom: 20px;
+  }
+
+  .globalaccounts i,
+  .paymentsfx i,
+  .cards i,
+  .xerointegration i {
+    font-size: 1.5rem;
+  }
+
+  .globalaccounts h3,
+  .paymentsfx h3,
+  .cards h3,
+  .xerointegration h3 {
+    font-size: 1rem;
+  }
+
+  .globalaccounts p,
+  .paymentsfx p,
+  .cards p,
+  .xerointegration p {
+    line-height: 1.8;
+    font-size: 0.8rem;
+  }
+
+  .finalcalltoaction {
+    height: 45vh;
+  }
+
+  .finalcalltoaction a {
+    bottom: 40px;
+  }
+
+  .calltoaction2 {
+    padding: 5px 21px;
+    font-size: 1.1rem;
+  }
+
+  footer i {
+    font-size: 0.7rem;
+    padding: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .logo {
+    width: 90px;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    left: 50px;
+    bottom: 55%;
+    font-size: 0.8rem;
+  }
+
+  .calltoaction {
+    left: 50px;
+    padding: 5px 21px;
+    font-size: 0.7rem;
+  }
+
+  .heroimage1 {
+    right: -175px;
+    width: 350px;
+  }
+
+  .heroimage2 {
+    right: 110px;
+    width: 120px;
+    bottom: 20px;
+  }
+
+  .globalaccounts i,
+  .paymentsfx i,
+  .cards i,
+  .xerointegration i {
+    font-size: 1.2rem;
+  }
+
+  .globalaccounts h3,
+  .paymentsfx h3,
+  .cards h3,
+  .xerointegration h3 {
+    font-size: 0.9rem;
+  }
+
+  .globalaccounts p,
+  .paymentsfx p,
+  .cards p,
+  .xerointegration p {
+    line-height: 1.8;
+    font-size: 0.7rem;
+  }
+
+  .finalcalltoaction {
+    height: 45vh;
+  }
+
+  .finalcalltoaction a {
+    bottom: 40px;
+  }
+
+  .calltoaction2 {
+    padding: 5px 21px;
+    font-size: 1rem;
+  }
+
+  footer i {
+    font-size: 0.7rem;
+    padding: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .logo {
+    width: 90px;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .hero h1 {
+    left: 30px;
+    bottom: 55%;
+    font-size: 0.8rem;
+  }
+
+  .calltoaction {
+    left: 26px;
+    padding: 5px 21px;
+    font-size: 0.7rem;
+  }
+
+  .heroimage1 {
+    right: -175px;
+    width: 350px;
+  }
+
+  .heroimage2 {
+    right: 100px;
+    width: 120px;
+    bottom: 10%;
+  }
+
+  .globalaccounts,
+  .paymentsfx,
+  .cards,
+  .xerointegration {
+    padding: 10px;
+  }
+
+  .globalaccounts i,
+  .paymentsfx i,
+  .cards i,
+  .xerointegration i {
+    font-size: 1rem;
+  }
+
+  .globalaccounts h3,
+  .paymentsfx h3,
+  .cards h3,
+  .xerointegration h3 {
+    font-size: 0.8rem;
+  }
+
+  .globalaccounts p,
+  .paymentsfx p,
+  .cards p,
+  .xerointegration p {
+    line-height: 1.8;
+    font-size: 0.6rem;
+  }
+
+  .finalcalltoaction {
+    height: 45vh;
+  }
+
+  .finalcalltoaction a {
+    bottom: 40px;
+  }
+
+  .calltoaction2 {
+    padding: 5px 21px;
+    font-size: 0.9rem;
+  }
+
+  footer i {
+    font-size: 0.7rem;
+    padding: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .logo {
+    width: 90px;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .hero h1 {
+    left: 30px;
+    bottom: 55%;
+    font-size: 0.7rem;
+  }
+
+  .calltoaction {
+    left: 30px;
+    padding: 5px 21px;
+    font-size: 0.6rem;
+  }
+
+  .heroimage1 {
+    right: -175px;
+    width: 340px;
+  }
+
+  .heroimage2 {
+    right: 100px;
+    width: 110px;
+    bottom: 20px;
+  }
+
+  .globalaccounts i,
+  .paymentsfx i,
+  .cards i,
+  .xerointegration i {
+    font-size: 0.8rem;
+  }
+
+  .globalaccounts h3,
+  .paymentsfx h3,
+  .cards h3,
+  .xerointegration h3 {
+    font-size: 0.7rem;
+  }
+
+  .globalaccounts p,
+  .paymentsfx p,
+  .cards p,
+  .xerointegration p {
+    line-height: 1.8;
+    font-size: 0.5rem;
+  }
+
+  .finalcalltoaction {
+    height: 45vh;
+  }
+
+  .finalcalltoaction a {
+    bottom: 40px;
+  }
+
+  .calltoaction2 {
+    padding: 5px 21px;
+    font-size: 0.8rem;
+  }
+
+  footer i {
+    font-size: 0.7rem;
+    padding: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .logo {
+    width: 90px;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    left: 25px;
+    bottom: 55%;
+    font-size: 0.6rem;
+  }
+
+  .calltoaction {
+    left: 25px;
+    padding: 5px 21px;
+    font-size: 0.6rem;
+  }
+
+  .heroimage1 {
+    right: -175px;
+    width: 320px;
+  }
+
+  .heroimage2 {
+    right: 90px;
+    width: 80px;
+    bottom: 40px;
+  }
+
+  .globalaccounts i,
+  .paymentsfx i,
+  .cards i,
+  .xerointegration i {
+    font-size: 0.8rem;
+  }
+
+  .globalaccounts h3,
+  .paymentsfx h3,
+  .cards h3,
+  .xerointegration h3 {
+    font-size: 0.7rem;
+  }
+
+  .globalaccounts p,
+  .paymentsfx p,
+  .cards p,
+  .xerointegration p {
+    line-height: 1.8;
+    font-size: 0.5rem;
+  }
+
+  .finalcalltoaction {
+    height: 45vh;
+  }
+
+  .finalcalltoaction a {
+    bottom: 40px;
+  }
+
+  .calltoaction2 {
+    padding: 5px 21px;
+    font-size: 0.8rem;
+  }
+
+  footer i {
+    font-size: 0.7rem;
+    padding: 0 20px 0 0;
+  }
+}
