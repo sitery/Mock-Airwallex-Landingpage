@@ -491,18 +491,18 @@ footer i {
   }
 
   .calltoaction {
-    left: 26px;
+    left: 30px;
     padding: 5px 21px;
     font-size: 0.7rem;
   }
 
   .heroimage1 {
-    right: -175px;
+    right: -200px;
     width: 350px;
   }
 
   .heroimage2 {
-    right: 100px;
+    right: 76px;
     width: 120px;
     bottom: 10%;
   }
@@ -565,26 +565,26 @@ footer i {
   }
 
   .hero h1 {
-    left: 30px;
+    left: 28px;
     bottom: 55%;
     font-size: 0.7rem;
   }
 
   .calltoaction {
-    left: 30px;
+    left: 28px;
     padding: 5px 21px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .heroimage1 {
-    right: -175px;
-    width: 340px;
+    right: -210px;
+    width: 350px;
   }
 
   .heroimage2 {
-    right: 100px;
-    width: 110px;
-    bottom: 20px;
+    right: 66px;
+    width: 120px;
+    bottom: 10%;
   }
 
   .globalaccounts i,
